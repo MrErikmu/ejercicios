@@ -1,0 +1,5 @@
+C:\Users\Neolix\programacion-2025-2026\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net9.0\Gestion de Parking LV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Neolix\programacion-2025-2026\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net9.0\Gestion de Parking LV.AssemblyInfoInputs.cache
+C:\Users\Neolix\programacion-2025-2026\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net9.0\Gestion de Parking LV.AssemblyInfo.cs
+C:\Users\Neolix\programacion-2025-2026\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net9.0\Gestion de Parking LV.csproj.CoreCompileInputs.cache
+C:\Users\Neolix\programacion-2025-2026\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net9.0\Gestion de Parking LV.sourcelink.json
