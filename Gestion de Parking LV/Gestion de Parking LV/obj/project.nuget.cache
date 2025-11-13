@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NwbByNZsy8w=",
+  "dgSpecHash": "uPfelZ8p1vM=",
   "success": true,
   "projectFilePath": "C:\\Users\\Neolix\\programacion-2025-2026\\ejercicios\\Gestion de Parking LV\\Gestion de Parking LV\\Gestion de Parking LV.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Neolix\\.nuget\\packages\\serilog\\4.3.1-dev-02395\\serilog.4.3.1-dev-02395.nupkg.sha512",
+    "C:\\Users\\Neolix\\.nuget\\packages\\serilog.sinks.console\\6.1.1\\serilog.sinks.console.6.1.1.nupkg.sha512"
+  ],
   "logs": []
 }

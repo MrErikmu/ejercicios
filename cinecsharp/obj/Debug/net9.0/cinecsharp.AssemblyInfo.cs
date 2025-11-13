@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cinecsharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a788d577c3ccf0e6f63673b690f930baf5db9cd2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2562813c02e41de2d4c685cbaed6c3c41b97b8ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("cinecsharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cinecsharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
