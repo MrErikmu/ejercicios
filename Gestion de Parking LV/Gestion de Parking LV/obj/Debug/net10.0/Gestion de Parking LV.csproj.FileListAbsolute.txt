@@ -1,0 +1,19 @@
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\bin\Debug\net10.0\Gestion de Parking LV.exe
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\bin\Debug\net10.0\Gestion de Parking LV.deps.json
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\bin\Debug\net10.0\Gestion de Parking LV.runtimeconfig.json
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\bin\Debug\net10.0\Gestion de Parking LV.dll
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\bin\Debug\net10.0\Gestion de Parking LV.pdb
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\bin\Debug\net10.0\Serilog.dll
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\bin\Debug\net10.0\Serilog.Sinks.Console.dll
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\Gestion de Parking LV.csproj.AssemblyReference.cache
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\Gestion de Parking LV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\Gestion de Parking LV.AssemblyInfoInputs.cache
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\Gestion de Parking LV.AssemblyInfo.cs
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\Gestion de Parking LV.csproj.CoreCompileInputs.cache
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\Gestion de Parking LV.sourcelink.json
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\Gestion .F7E9636D.Up2Date
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\Gestion de Parking LV.dll
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\refint\Gestion de Parking LV.dll
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\Gestion de Parking LV.pdb
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\Gestion de Parking LV.genruntimeconfig.cache
+C:\Users\Neolix\programacion-2025-2026\ejercicios\Gestion de Parking LV\Gestion de Parking LV\obj\Debug\net10.0\ref\Gestion de Parking LV.dll
