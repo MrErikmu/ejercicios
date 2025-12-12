@@ -1,0 +1,14 @@
+C:\Users\Erik\Desktop\ROCK Band\obj\Debug\net10.0\ROCK Band.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Erik\Desktop\ROCK Band\obj\Debug\net10.0\ROCK Band.AssemblyInfoInputs.cache
+C:\Users\Erik\Desktop\ROCK Band\obj\Debug\net10.0\ROCK Band.AssemblyInfo.cs
+C:\Users\Erik\Desktop\ROCK Band\obj\Debug\net10.0\ROCK Band.csproj.CoreCompileInputs.cache
+C:\Users\Erik\Desktop\ROCK Band\bin\Debug\net10.0\ROCK Band.exe
+C:\Users\Erik\Desktop\ROCK Band\bin\Debug\net10.0\ROCK Band.deps.json
+C:\Users\Erik\Desktop\ROCK Band\bin\Debug\net10.0\ROCK Band.runtimeconfig.json
+C:\Users\Erik\Desktop\ROCK Band\bin\Debug\net10.0\ROCK Band.dll
+C:\Users\Erik\Desktop\ROCK Band\bin\Debug\net10.0\ROCK Band.pdb
+C:\Users\Erik\Desktop\ROCK Band\obj\Debug\net10.0\ROCK Band.dll
+C:\Users\Erik\Desktop\ROCK Band\obj\Debug\net10.0\refint\ROCK Band.dll
+C:\Users\Erik\Desktop\ROCK Band\obj\Debug\net10.0\ROCK Band.pdb
+C:\Users\Erik\Desktop\ROCK Band\obj\Debug\net10.0\ROCK Band.genruntimeconfig.cache
+C:\Users\Erik\Desktop\ROCK Band\obj\Debug\net10.0\ref\ROCK Band.dll

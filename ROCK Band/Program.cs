@@ -1,29 +1,34 @@
-﻿using ROCK_Band.Factory;
+﻿using System.Text;
+using ROCK_Band.Factory;
 using ROCK_Band.Models;
 
-Musico bateria = FactoryBanda.CrearBateriaRandom();
-Musico bajista = FactoryBanda.CrearBajistaRandom();
-Musico guitarrista1 = FactoryBanda.CrearGuitarristaRandom();
-Musico guitarrista2 = FactoryBanda.CrearGuitarristaRandom();
-Musico cantante = FactoryBanda.CrearCantanteRandom();
-//Musico cantante = FactoryBanda.CrearMusicoRandom(FactoryBanda.TipoBanda.Cantante);
+Console.Title = "Banda de Rock";
+Console.OutputEncoding = Encoding.UTF8;
+Console.Clear();
+
+Musico bateria = FactoryBanda.CrearMusicoRandom(TipoMusico.Bateria);
+Musico bajista = FactoryBanda.CrearMusicoRandom(TipoMusico.Bajista);
+Musico guitarrista1 = FactoryBanda.CrearMusicoRandom(TipoMusico.Guitarrista);
+Musico guitarrista2 = FactoryBanda.CrearMusicoRandom(TipoMusico.Guitarrista);
+Musico cantante = FactoryBanda.CrearMusicoRandom(TipoMusico.Cantante);
 Musico[] bandaRock= {bateria,bajista, guitarrista1,guitarrista2,cantante };
+
 EmpezarEnsayo(bandaRock);
 ListarMiembros(bandaRock);
 
+Console.ReadKey();
+
 void ListarMiembros(Musico[] musicos)
 {
+    Console.WriteLine("Mostrando a los musicos de la banda");
     foreach (Musico m in musicos)
     {
         Console.WriteLine($"{m.Nombre} lleva {m.Tiempobanda} años en la banda");  
     }
 }
-
-Console.ReadKey();
-
-
 void EmpezarEnsayo(Musico[] banda)
 {
+    Console.WriteLine("Empezando ensayo de la banda");
     foreach (Musico m in banda)
     {
         switch (m)
