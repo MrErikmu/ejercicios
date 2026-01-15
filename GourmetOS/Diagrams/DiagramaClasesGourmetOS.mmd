@@ -1,0 +1,68 @@
+---
+config:
+  look: neo
+  theme: neo-dark
+---
+classDiagram
+direction TB
+    class Persona {
+	    +string nombre
+	    +String dni
+	    +string ss
+	    +int Telefono
+	    +int Movil
+    }
+
+    class Pinche {
+	    +string nacimiento
+	    +cocinero mentor
+	    +retirar(Ingrediente)
+    }
+
+    class Chef {
+	    +int experiencia
+	    +List~string~ recetas
+	    +cocinar(Plato)
+    }
+
+    class Almacen {
+		+List~estante~ estante
+    }
+
+    class Estante {
+	    +string letras
+	    +string tamaño
+	    +Ingrediente ingrediente
+    }
+
+    class Ingrediente {
+	    +string nombre
+	    +string descripcion
+	    +int numero
+    }
+
+    class Plato {
+	    +string nombre
+	    +double precio
+	    +enum categoria
+	    +string ingrediente
+    }
+
+    class Service {
+	    -ComprobarChef(Chef) :bool
+    }
+
+    class TipoPlato {
+	    primero
+	    segundo
+	    postre
+    }
+
+	<<enumeration>> TipoPlato
+
+    Persona <|-- Pinche
+    Persona <|-- Chef
+    Almacen "1" --* "*" Estante
+    Estante "1" --* "*" Ingrediente
+    Plato "1" --o "*" Ingrediente
+    TipoPlato -- Plato

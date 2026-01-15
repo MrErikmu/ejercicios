@@ -1,0 +1,14 @@
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\bin\Debug\net10.0\GourmetOS.exe
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\bin\Debug\net10.0\GourmetOS.deps.json
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\bin\Debug\net10.0\GourmetOS.runtimeconfig.json
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\bin\Debug\net10.0\GourmetOS.dll
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\bin\Debug\net10.0\GourmetOS.pdb
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\obj\Debug\net10.0\GourmetOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\obj\Debug\net10.0\GourmetOS.AssemblyInfoInputs.cache
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\obj\Debug\net10.0\GourmetOS.AssemblyInfo.cs
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\obj\Debug\net10.0\GourmetOS.csproj.CoreCompileInputs.cache
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\obj\Debug\net10.0\GourmetOS.dll
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\obj\Debug\net10.0\refint\GourmetOS.dll
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\obj\Debug\net10.0\GourmetOS.pdb
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\obj\Debug\net10.0\GourmetOS.genruntimeconfig.cache
+C:\Users\Neolix\Desktop\Programas en c#\GourmetOS\GourmetOS\obj\Debug\net10.0\ref\GourmetOS.dll
