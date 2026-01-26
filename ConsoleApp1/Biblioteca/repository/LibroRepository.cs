@@ -3,7 +3,7 @@ using ConsoleApp1.Models.Lista;
 
 namespace ConsoleApp1.repository;
 
-public class LibroRepository
+public class LibroRepository:ILibroRepository
 {
     private readonly ILista<Libro> _lista = new Lista<Libro>();
     private static LibroRepository? _instance;

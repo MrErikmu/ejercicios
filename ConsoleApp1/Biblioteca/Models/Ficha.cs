@@ -1,8 +1,9 @@
 namespace ConsoleApp1.Models;
 
-public abstract class Ficha
+public abstract class Ficha(string titulo)
 {
-    public int Id { get; init; } = 0;
-    public required string Titulo { get; init; }
-    
+    private static int _id = 0;
+    public int Id { get; } = _id++;
+    public required string Titulo { get; init; } = titulo;
+
 }

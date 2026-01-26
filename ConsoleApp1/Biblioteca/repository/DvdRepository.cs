@@ -4,7 +4,7 @@ using ConsoleApp1.repository.Common;
 
 namespace ConsoleApp1.repository;
 
-public class DvdRepository:IDvdRepository,ICrudRep<int, Dvd>
+public class DvdRepository:IDvdRepository
 {
     private readonly ILista<Dvd> _lista = new Lista<Dvd>();
     private static DvdRepository? _instance;

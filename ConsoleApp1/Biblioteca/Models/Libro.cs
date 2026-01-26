@@ -1,13 +1,8 @@
 namespace ConsoleApp1.Models;
 
-public class Libro:Ficha
+public class Libro(string autor, string editorial, string titulo) : Ficha(titulo)
+
 {
-    public Libro(string autor, string editorial) 
-    {
-        Autor = autor;
-        Editorial = editorial;
-    }
-    
-    public string Autor { get; init; }
-    public string Editorial { get; init; }
+public string Autor { get; } = autor;
+public string Editorial { get;} = editorial;
 }

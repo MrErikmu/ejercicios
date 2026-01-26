@@ -33,7 +33,7 @@ public class BibliotecaService
     {
         revistaRepository.Añadir(item);
     }
-
+    
     /*public void AñadirItem(Tipo item, Ficha ficha) Intento de implementar el agregar en 1 sola funcion
     {
         if (item==Tipo.Dvd)
@@ -50,22 +50,9 @@ public class BibliotecaService
         } 
     }*/
    
-    public void EliminarItem(Tipo item, int id)
-    {
-        if (item==Tipo.Dvd)
-        {
-            dvdRepository.Eliminar(id);
-        }
-        if (item==Tipo.Revista)
-        {
-            revistaRepository.Eliminar(id);
-        }
-        if (item==Tipo.Libro)
-        {
-            libroRepository.Eliminar(id);
-        }
-    }
-
+    public void EliminarDvd(int id) { dvdRepository.Eliminar(id); }
+    public void EliminarRevista(int id){revistaRepository.Eliminar(id);}
+    public void EliminarLibro(int id){libroRepository.Eliminar(id);}
     public void ListarBiblioteca()
     {
       var listatotal = new Lista<Ficha>();
