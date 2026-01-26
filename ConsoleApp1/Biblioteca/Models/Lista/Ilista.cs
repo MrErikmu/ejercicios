@@ -1,0 +1,21 @@
+using System.Collections;
+
+namespace ConsoleApp1.Models;
+
+public interface ILista<T> : IEnumerable
+{
+        void AgregarInicio(T valor);
+        void AgregarFinal(T valor);
+        void AgregarEn(T valor, int indice);
+        void EliminarInicio();
+        void EliminarFinal();
+        void EliminarEn(int indice);
+        T ObtenerPrimero();
+        T ObtenerUltimo();
+        T Obtener(int indice);
+        bool Existe(T valor);
+        int Contar();
+        bool EstaVacia();
+        void Limpiar();
+        void Mostrar();
+}

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GourmetOS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a548969a55e2231e7fb45ffb5b9054633372b62")]
 [assembly: System.Reflection.AssemblyProductAttribute("GourmetOS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GourmetOS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Neolix\\.nuget\\packages\\": {}
+    "C:\\Users\\Erik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neolix\\Desktop\\Programas en c#\\GourmetOS\\GourmetOS\\GourmetOS.csproj",
+      "projectUniqueName": "C:\\Users\\Erik\\programacion\\GourmetOS\\GourmetOS.csproj",
       "projectName": "GourmetOS",
-      "projectPath": "C:\\Users\\Neolix\\Desktop\\Programas en c#\\GourmetOS\\GourmetOS\\GourmetOS.csproj",
-      "packagesPath": "C:\\Users\\Neolix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Neolix\\Desktop\\Programas en c#\\GourmetOS\\GourmetOS\\obj\\",
+      "projectPath": "C:\\Users\\Erik\\programacion\\GourmetOS\\GourmetOS.csproj",
+      "packagesPath": "C:\\Users\\Erik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Erik\\programacion\\GourmetOS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Neolix\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Erik\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"

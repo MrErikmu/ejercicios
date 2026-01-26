@@ -21,12 +21,14 @@ direction TB
 
     class Chef {
 	    +int experiencia
-	    +List~string~ recetas
+	    +List~Plato~ recetas
 	    +cocinar(Plato)
     }
 
     class Almacen {
 		+List~estante~ estante
+		-ComprobarChef(Chef) :bool
+		
     }
 
     class Estante {
@@ -48,21 +50,20 @@ direction TB
 	    +string ingrediente
     }
 
-    class Service {
-	    -ComprobarChef(Chef) :bool
-    }
-
     class TipoPlato {
+        entrante
 	    primero
 	    segundo
 	    postre
     }
 
 	<<enumeration>> TipoPlato
+	
 
     Persona <|-- Pinche
     Persona <|-- Chef
+    Chef "1" --* Pinche
     Almacen "1" --* "*" Estante
-    Estante "1" --* "*" Ingrediente
+    Estante "1" --* "1" Ingrediente
     Plato "1" --o "*" Ingrediente
-    TipoPlato -- Plato
+    TipoPlato "1" -- "1" Plato

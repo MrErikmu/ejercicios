@@ -96,19 +96,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Neolix\\.nuget\\packages\\": {}
+    "C:\\Users\\Erik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neolix\\programacion-2025-2026\\ejercicios\\Gestion de Parking LV\\Gestion de Parking LV\\Gestion de Parking LV.csproj",
+      "projectUniqueName": "C:\\Users\\Erik\\programacion\\Gestion de Parking LV\\Gestion de Parking LV\\Gestion de Parking LV.csproj",
       "projectName": "Gestion de Parking LV",
-      "projectPath": "C:\\Users\\Neolix\\programacion-2025-2026\\ejercicios\\Gestion de Parking LV\\Gestion de Parking LV\\Gestion de Parking LV.csproj",
-      "packagesPath": "C:\\Users\\Neolix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Neolix\\programacion-2025-2026\\ejercicios\\Gestion de Parking LV\\Gestion de Parking LV\\obj\\",
+      "projectPath": "C:\\Users\\Erik\\programacion\\Gestion de Parking LV\\Gestion de Parking LV\\Gestion de Parking LV.csproj",
+      "packagesPath": "C:\\Users\\Erik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Erik\\programacion\\Gestion de Parking LV\\Gestion de Parking LV\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Neolix\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Erik\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
