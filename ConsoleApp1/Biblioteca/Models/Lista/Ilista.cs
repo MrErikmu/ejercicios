@@ -1,6 +1,6 @@
 using System.Collections;
 
-namespace ConsoleApp1.Models;
+namespace ConsoleApp1.Models.Lista;
 
 public interface ILista<T> : IEnumerable
 {

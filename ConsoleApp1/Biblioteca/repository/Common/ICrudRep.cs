@@ -1,4 +1,5 @@
 using ConsoleApp1.Models;
+using ConsoleApp1.Models.Lista;
 
 namespace ConsoleApp1.repository.Common;
 

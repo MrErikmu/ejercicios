@@ -21,6 +21,27 @@ public class BibliotecaService
     public int Totalrevsta { get; } = revistaRepository.ObtenerTotal();
     */
     public Lista<Ficha> Listatotal = Factory.Factory.LLenarLista();
+
+    public void LlenarRepositorio()
+    {
+        foreach (Ficha item in Listatotal)
+        {
+            if (item is Dvd d)
+            {
+                AñadirDvd(d); 
+            }
+
+            if (item is Revista r)
+            {
+                 AñadirRevista(r);
+            }
+            if (item is Libro l)
+            {
+                AñadirLibro(l);
+            }
+        }
+       
+    }
     
     public void AñadirDvd(Dvd item)
     {
