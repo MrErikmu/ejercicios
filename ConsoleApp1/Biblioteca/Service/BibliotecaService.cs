@@ -2,7 +2,7 @@ using ConsoleApp1.Models;
 using ConsoleApp1.Models.Lista;
 using ConsoleApp1.repository;
 using ConsoleApp1.Validators;
-
+using ConsoleApp1.Factory;
 namespace ConsoleApp1.Service;
 
 public class BibliotecaService
@@ -15,22 +15,28 @@ public class BibliotecaService
     ILibroValidator libroValidator
     ): IBibliotecaService
 {
+    /* variables para obtener el total de cada item
     public int Totaldvd { get; } = dvdRepository.ObtenerTotal();
     public int Totallibros { get; } = libroRepository.ObtenerTotal();
     public int Totalrevsta { get; } = revistaRepository.ObtenerTotal();
+    */
+    public Lista<Ficha> Listatotal = Factory.Factory.LLenarLista();
     
     public void AñadirDvd(Dvd item)
     {
+        dvdValidator.Validate(item);
         dvdRepository.Añadir(item);
     }
 
     public void AñadirLibro(Libro item)
     {
+        libroValidator.Validate(item);
         libroRepository.Añadir(item);
     }
 
     public void AñadirRevista(Revista item)
     {
+        revistaValidator.Validate(item);
         revistaRepository.Añadir(item);
     }
     
@@ -55,19 +61,51 @@ public class BibliotecaService
     public void EliminarLibro(int id){libroRepository.Eliminar(id);}
     public void ListarBiblioteca()
     {
-      var listatotal = new Lista<Ficha>();
-      foreach (Ficha item in revistaRepository.ObtenerListado())
-      {
-          listatotal.AgregarInicio(item);
-      }
-      foreach (Ficha item in dvdRepository.ObtenerListado())
-      {
-          listatotal.AgregarInicio(item);
-      }
-      foreach (Ficha item in libroRepository.ObtenerListado())
-      {
-          listatotal.AgregarInicio(item);
-      }
-      listatotal.Mostrar();
+        foreach (Ficha item in revistaRepository.ObtenerListado())
+        {
+            Listatotal.AgregarInicio(item);
+        }
+        foreach (Ficha item in dvdRepository.ObtenerListado())
+        {
+            Listatotal.AgregarInicio(item);
+        }
+        foreach (Ficha item in libroRepository.ObtenerListado())
+        {
+            Listatotal.AgregarInicio(item);
+        }
+        Listatotal.Mostrar();
+    }
+
+    public Dvd? BuscarDvd(int id)
+    {
+        var buscado = dvdRepository.Obtener(id);
+        if (buscado==null)
+        {
+          Console.WriteLine("Dvd no encontrado");
+          return null;
+        }
+        return buscado;
+    }
+
+    public Libro? BuscarLibro(int id)
+    {
+        var buscado = libroRepository.Obtener(id);
+        if (buscado==null)
+        {
+            Console.WriteLine("Libro no encontrado");
+            return null;
+        }
+        return buscado;
+    }
+
+    public Revista? BuscarRevista(int id)
+    {
+        var buscado = revistaRepository.Obtener(id);
+        if (buscado==null)
+        {
+            Console.WriteLine("revista no encontrada");
+            return null;
+        }
+        return buscado;
     }
 }

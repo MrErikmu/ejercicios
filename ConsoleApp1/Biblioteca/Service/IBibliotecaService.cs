@@ -13,4 +13,7 @@ public interface IBibliotecaService
     public void EliminarRevista(int id);
     public void EliminarLibro(int id);
     public void ListarBiblioteca();
+    public Dvd? BuscarDvd(int id);
+    public Libro? BuscarLibro(int id);
+    public Revista? BuscarRevista(int id);
 }
