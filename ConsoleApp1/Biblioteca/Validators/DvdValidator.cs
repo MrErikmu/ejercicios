@@ -6,6 +6,7 @@ public class DvdValidator : IDvdValidator
 {
     public Dvd Validate(Dvd item)
     {
+        
         // --- 1. Validación del Título ---
         if (string.IsNullOrWhiteSpace(item.Titulo)) {
             throw new ArgumentException("El Titulo no puede estar vacío.", nameof(item.Titulo));
