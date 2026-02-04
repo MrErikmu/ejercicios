@@ -164,9 +164,7 @@ public class Lista<T> : ILista<T>
     public void Mostrar() {
         var actual = _cabeza;
         while (actual != null) {
-            Console.Write(actual.Valor!.ToString());
-            if (actual.Siguiente != null)
-                Console.Write(" -> ");
+            Console.WriteLine(actual.Valor!.ToString());
             actual = actual.Siguiente;
         }
         Console.WriteLine();

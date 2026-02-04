@@ -60,40 +60,11 @@ public class BibliotecaService
         revistaValidator.Validate(item);
         revistaRepository.Añadir(item);
     }
-    
-    /*public void AñadirItem(Tipo item, Ficha ficha) Intento de implementar el agregar en 1 sola funcion
-    {
-        if (item==Tipo.Dvd)
-        {
-            dvdRepository.Añadir(dvd);
-        }
-        if (item==Tipo.Revista)
-        {
-            revistaRepository.Añadir(id);
-        }
-        if (item==Tipo.Libro)
-        {
-            libroRepository.Añadir(id);
-        } 
-    }*/
-   
     public void EliminarDvd(int id) { dvdRepository.Eliminar(id); }
     public void EliminarRevista(int id){revistaRepository.Eliminar(id);}
     public void EliminarLibro(int id){libroRepository.Eliminar(id);}
     public void ListarBiblioteca()
     {
-        foreach (Ficha item in revistaRepository.ObtenerListado())
-        {
-            Listatotal.AgregarInicio(item);
-        }
-        foreach (Ficha item in dvdRepository.ObtenerListado())
-        {
-            Listatotal.AgregarInicio(item);
-        }
-        foreach (Ficha item in libroRepository.ObtenerListado())
-        {
-            Listatotal.AgregarInicio(item);
-        }
         Listatotal.Mostrar();
     }
 
