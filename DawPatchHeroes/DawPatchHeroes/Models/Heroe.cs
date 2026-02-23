@@ -6,7 +6,7 @@ public abstract class Heroe
     public int Lvl { get; set; }
     public int Energy { get; set; }
     public int Exp { get; set; }
-    public int BasePower { get; set; }
+    public int PowerLvl { get; set; }
 
     public virtual void Train()
     {

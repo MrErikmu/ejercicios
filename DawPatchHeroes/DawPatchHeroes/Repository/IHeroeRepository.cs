@@ -4,7 +4,7 @@ namespace DawPatchHeroes.Repository;
 
 public interface IHeroeRepository
 {
-    public Heroe GetHeroeByName();
+    public Heroe GetHeroeByName(string name);
     public Heroe GetHeroeByLvl(int lvl);
     public List<Mission> GetPendingMissions();
     public List<Heroe>GetHeroesOrderByLvl();

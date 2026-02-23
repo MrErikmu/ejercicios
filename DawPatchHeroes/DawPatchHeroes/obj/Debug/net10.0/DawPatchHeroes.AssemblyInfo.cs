@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DawPatchHeroes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05365d8daaef3604ac6a4c97840db2cefc59fe87")]
 [assembly: System.Reflection.AssemblyProductAttribute("DawPatchHeroes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DawPatchHeroes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
