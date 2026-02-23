@@ -3,23 +3,23 @@ using DawPatchHeroes.Models;
 
 namespace DawPatchHeroes.Factory;
 
-public class Factory:IFactory
+public static class Factory
 {
-    public  List<Heroe> SeedHeroes()
+    public static List<Heroe> SeedHeroes()
     {
         List<Heroe> heroelist = new List<Heroe>();
         heroelist.AddRange(new List<Heroe>
         {
-            new MasterMind { Name = "Aeliana Frost", Energy = 10, Exp = 0, Lvl = 1, PowerLvl = 1 },
-            new StrongMan { Name = "Jaxom Ember", Energy = 50, Exp = 0, Lvl = 1, PowerLvl = 1 },
-            new Rogue { Name = "Kaelen Voidwalker", Energy = 60, Exp = 0, Lvl = 2, PowerLvl = 2 },
-            new StrongMan { Name = "Thorne Ironbark", Energy = 150, Exp = 0, Lvl = 3, PowerLvl = 3 },
-            new Rogue() { Name = "Serafina Bright", Energy = 80, Exp = 0, Lvl = 4, PowerLvl = 4 }
+            new MasterMind { Name = "Aeliana Frost", Hp = 10, Exp = 0, Lvl = 1, PowerLvl = 1 },
+            new StrongMan { Name = "Jaxom Ember", Hp = 50, Exp = 0, Lvl = 1, PowerLvl = 1 },
+            new Rogue { Name = "Kaelen Voidwalker", Hp = 60, Exp = 0, Lvl = 2, PowerLvl = 2 },
+            new StrongMan { Name = "Thorne Ironbark", Hp = 150, Exp = 0, Lvl = 3, PowerLvl = 3 },
+            new Rogue() { Name = "Serafina Bright", Hp = 80, Exp = 0, Lvl = 4, PowerLvl = 4 }
         });
         return heroelist;
     }
 
-    public  List<Mission>SeedMission()
+    public static List<Mission>SeedMission()
     {
         List<Mission> missionlist = new List<Mission>();
         missionlist.AddRange(new List<Mission>
@@ -31,8 +31,8 @@ public class Factory:IFactory
                 Status = MisionStatus.Complete,
                 Team = new List<Heroe> 
                 {
-                    new Rogue { Name = "Kaelen Voidwalker", Energy = 60, Exp = 0, Lvl = 2, PowerLvl = 2 },
-                    new StrongMan { Name = "Thorne Ironbark", Energy = 150, Exp = 0, Lvl = 3, PowerLvl = 3 }
+                    new Rogue { Name = "Kaelen Voidwalker", Hp = 60, Exp = 0, Lvl = 2, PowerLvl = 2 },
+                    new StrongMan { Name = "Thorne Ironbark", Hp = 150, Exp = 0, Lvl = 3, PowerLvl = 3 }
                 }
             },
             new Mission
@@ -42,9 +42,9 @@ public class Factory:IFactory
                 Status = MisionStatus.Ongoing,
                 Team = new List<Heroe>
                 {
-                    new MasterMind { Name = "Aeliana Frost", Energy = 10, Exp = 0, Lvl = 1, PowerLvl = 1 },
-                    new StrongMan { Name = "Jaxom Ember", Energy = 50, Exp = 0, Lvl = 1, PowerLvl = 1 },
-                    new Rogue { Name = "Serafina Bright", Energy = 80, Exp = 0, Lvl = 4, PowerLvl = 4 }
+                    new MasterMind { Name = "Aeliana Frost", Hp = 10, Exp = 0, Lvl = 1, PowerLvl = 1 },
+                    new StrongMan { Name = "Jaxom Ember", Hp = 50, Exp = 0, Lvl = 1, PowerLvl = 1 },
+                    new Rogue { Name = "Serafina Bright", Hp = 80, Exp = 0, Lvl = 4, PowerLvl = 4 }
                 }
             }
         });

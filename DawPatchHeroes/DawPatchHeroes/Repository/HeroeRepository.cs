@@ -1,11 +1,16 @@
 using DawPatchHeroes.Models;
-using System.Linq;
 namespace DawPatchHeroes.Repository;
-
+using static System.Console;
 public class HeroeRepository: IHeroeRepository
 {
-    private List<Heroe>? _heroes;
-    private List<Mission>? _missions;
+    private static HeroeRepository? _instance; 
+    private readonly List<Heroe>? _heroes = new ();
+    private readonly List<Mission>? _missions = new();
+    public void GetAllHeroes()
+    {
+       _heroes.ForEach(WriteLine);
+    }
+
     public Heroe GetHeroeByName(string name)
     {
         var heroe = _heroes
@@ -42,6 +47,7 @@ public class HeroeRepository: IHeroeRepository
     {
         var heroelist = _heroes
             .OrderBy(h1 => h1.Exp)
+            .ThenBy(h1=> h1.Name)
             .ToList();
         return heroelist;
     }
@@ -50,7 +56,23 @@ public class HeroeRepository: IHeroeRepository
     {
         var heroelist = _heroes
             .OrderBy(h1 => h1.PowerLvl)
+            .ThenBy(h1=> h1.Name)
             .ToList();
         return heroelist;
+    }
+
+    public void AddHeroe(Heroe heroe)
+    {
+        _heroes!.Add(heroe);
+    }
+
+    public void AddMission(Mission mission )
+    {
+        _missions!.Add(mission);
+    }
+
+    public static HeroeRepository GetInstance()
+    {
+        return _instance ??= new HeroeRepository(); 
     }
 }

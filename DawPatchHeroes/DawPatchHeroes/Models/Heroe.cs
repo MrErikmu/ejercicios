@@ -4,7 +4,7 @@ public abstract class Heroe
 {
     public String Name { get; set; }
     public int Lvl { get; set; }
-    public int Energy { get; set; }
+    public int Hp { get; set; }
     public int Exp { get; set; }
     public int PowerLvl { get; set; }
 
