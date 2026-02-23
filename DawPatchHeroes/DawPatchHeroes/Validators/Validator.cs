@@ -22,21 +22,21 @@ public class Validator: IValidator
     public Heroe ValidateHeroe(Heroe heroe)
     {
         if (string.IsNullOrWhiteSpace(heroe.Name)) {
-            throw new ArgumentException("Todos los heroes necesitan un nombre/alias.", nameof(heroe.Name));
+            throw new ArgumentException("Error ⚠️: All Heroes need to have a name", nameof(heroe.Name));
         }
         if (heroe.Hp<=0) {
-            throw new ArgumentException("La Vida del heroe no puede ser negativa", nameof(heroe.Hp));
+            throw new ArgumentException("Error ⚠️: Heroe's hp can't be lower than 0", nameof(heroe.Hp));
         }
         if (heroe.Lvl<0) {
-            throw new ArgumentException("El nivel del heroe no puede ser negativo  ", nameof(heroe.Lvl));
+            throw new ArgumentException("Error ⚠️: Heroe's lvl can't be lower than 0 ", nameof(heroe.Lvl));
         }
         if (heroe.Exp<0) 
         {
-            throw new ArgumentException("La experiencia del heroe no  puede ser negativa  ", nameof(heroe.Exp));
+            throw new ArgumentException("Error ⚠️:Heroe's Experience can't be negative", nameof(heroe.Exp));
         }
         if (heroe.PowerLvl<0) 
         {
-            throw new ArgumentException("El poder del heroe no  puede ser negativo ", nameof(heroe.PowerLvl));
+            throw new ArgumentException("Error ⚠️: Heroe's power can't be negative", nameof(heroe.PowerLvl));
         }
         return heroe;
     }
@@ -49,17 +49,22 @@ public class Validator: IValidator
     public Mission ValidateMission(Mission mission)
     {
         if (string.IsNullOrWhiteSpace(mission.Name)) {
-            throw new ArgumentException("El Nombre de la mision no puede estar vacio.", nameof(mission.Name));
+            throw new ArgumentException("Error ⚠️: All missions MUST have a name", nameof(mission.Name));
         }
         if (mission.Difficulty<=0|| mission.Difficulty>10) {
-            throw new ArgumentException("La dificultad debe estar comprendida entre 1 y 10", nameof(mission.Difficulty));
+            throw new ArgumentException("Error ⚠️: The difficulty of a mission MUST be between 1 and 10 only", nameof(mission.Difficulty));
         }
         if (mission.Status!= MisionStatus.Complete || mission.Status!= MisionStatus.Ongoing) {
-            throw new ArgumentException("La mission solo puede estar completada o en proceso", nameof(mission.Status));
+            throw new ArgumentException("Error ⚠️: The mission can only be Ongoing or complete", nameof(mission.Status));
         }
         if (mission.Team.Count== 0) 
         {
-            throw new ArgumentException("Se debe asignar al menos un heroe a la mission");
+            throw new ArgumentException("Error ⚠️: All missions need atleast 1 heroe in the team ");
+        }
+
+        if (mission.CollabRequited && mission.Team.Count <= 1)
+        {
+            throw new ArgumentException("Error ⚠️: This is a special mission who needs more than 1 heroe to start");
         }
         return mission;
     }

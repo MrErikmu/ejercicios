@@ -4,8 +4,6 @@ namespace DawPatchHeroes.Models;
 /// </summary>
 public class MasterMind : Heroe
 {
-    
-
     public override void Train()
     {
         
