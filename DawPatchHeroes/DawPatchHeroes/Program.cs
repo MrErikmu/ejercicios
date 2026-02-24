@@ -1,11 +1,11 @@
 ﻿using System.Text;
 using System.Text.RegularExpressions;
-using DawPatchHeroes.Factory;
 using DawPatchHeroes.Models;
 using DawPatchHeroes.Repository;
 using DawPatchHeroes.Service;
 using DawPatchHeroes.Validators;
 using static System.Console;
+using Serilog;
 
 Title = "DawsPatch Heores";
 OutputEncoding = Encoding.UTF8;
@@ -18,12 +18,16 @@ return;
 
 void Main()
 {
+    /*Log.Logger = new LoggerConfiguration()
+        .MinimumLevel.Debug()
+        .WriteTo.Console(
+            outputTemplate: "{Timestamp:HH:mm:ss.fff} [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}")
+        .CreateLogger();*/
     IService service = new Service(HeroeRepository.GetInstance(), new Validator());
-    
     OptionMenu opcion;
     const string regexOpcionMenu = @"^([1-8])$";
     const string regexOpcionSubMenu = "^([0-6])$";
-    WriteLine(" Wellcome to Dawspatch Heroes Managing system ");
+    WriteLine(" Welcome to Dawspatch Heroes Managing system ");
     WriteLine(new string('━', 45));
     do {
         ShowMenu();
@@ -99,9 +103,9 @@ void Main()
             {
                 case TypeOrder.Heroebyminlvl: service.GetHeroeByOrder(opcionsubmenu); break;
                 case TypeOrder.Heroebyexp: service.GetHeroeByOrder(opcionsubmenu); break;
-                case TypeOrder.Heroebypowerlvl : service.GetHeroeByOrder(opcionsubmenu); break;
                 case TypeOrder.Missionpending: service.GetMissionByOrder(opcionsubmenu); break;
                 case TypeOrder.Missionbycollabrequired: service.GetMissionByOrder(opcionsubmenu); break;
+                case TypeOrder.Heroebypowerlvl : service.GetHeroeByOrder(opcionsubmenu); break;
                 case 0: WriteLine("\n Returning..."); break;
             }
         } while (opcionsubmenu!=0);
@@ -109,8 +113,8 @@ void Main()
 
     void  CreateMision()
     {
-        
-        service.CreateMission();
+        Mission newmision = null;
+        service.CreateMission(newmision);
     }
 
     void CreateHeroe()
@@ -146,40 +150,52 @@ void Main()
         switch (classtype.ToUpper())
         {
             case "ROGUE": 
-                newheroe = new Rogue();
+                newheroe = new Rogue() 
+                {
+                    Name = name,
+                    Hp = int.Parse(hp),
+                    Exp = int.Parse(exp),
+                    Lvl = int.Parse(lvl),
+                    PowerLvl = int.Parse(power)
+                };
                 break;
                 case "STRONGMAN":
-                newheroe = new StrongMan();
+                newheroe = new StrongMan() 
+                {
+                    Name = name,
+                    Hp = int.Parse(hp),
+                    Exp = int.Parse(exp),
+                    Lvl = int.Parse(lvl),
+                    PowerLvl = int.Parse(power)
+                };
                 break;
                 case "MASTERMIND":
-                newheroe = new MasterMind();
-                        break;
+                newheroe = new MasterMind() 
+                {
+                    Name = name,
+                    Hp = int.Parse(hp),
+                    Exp = int.Parse(exp),
+                    Lvl = int.Parse(lvl),
+                    PowerLvl = int.Parse(power)
+                }; break;
         }
-
-        if (newheroe != null)
-        {
-            newheroe.Name = name;
-            newheroe.Hp = int.Parse(hp);
-            newheroe.Exp = int.Parse(exp);
-            newheroe.Lvl = int.Parse(lvl);
-            newheroe.PowerLvl = int.Parse(power);
-            service.CreateHeroe(newheroe);
-        }
-        
+        service.CreateHeroe(newheroe ?? new Rogue());
     }
 
     void SimulateMission()
     {
-        WriteLine("Register a new mission");
-        var mission = new Mission()
-        {
-
-        };
+        WriteLine("Enter mission name to start:");
+        var name = ReadLine() ?? "unknown";
+        service.SimulateMission(name);
     }
 
     void AssingHeroe()
     {
-        
+        WriteLine("Enter the mission name you wish to add a heroe to:");
+        var mname = ReadLine() ?? "unknown";
+        WriteLine($"Enter the heroe name you wish to add to the mission: {mname}");
+        var hname = ReadLine() ?? "unknown";
+        service.AssingHeroe(mname,hname);
     }
     bool ValidateEntry( string entry, string? pattern)
     {

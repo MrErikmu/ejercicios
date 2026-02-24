@@ -6,9 +6,10 @@ public interface IService
 {
     public void ListAll();
     public void ShowRanking();
+    public void SimulateMission(string missionname);
     public void GetHeroeByOrder(TypeOrder type);
     public void GetMissionByOrder(TypeOrder type); 
-    public void AssingHeroe(Heroe heroe, string namemission);
+    public void AssingHeroe(string heroename, string namemission);
     public void CreateHeroe(Heroe newheroe);
-    public void CreateMission();
+    public void CreateMission(Mission mission);
 }

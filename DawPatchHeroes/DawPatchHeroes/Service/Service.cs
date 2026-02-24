@@ -7,17 +7,35 @@ namespace DawPatchHeroes.Service;
 
 public class Service(IHeroeRepository heroeRepository, IValidator validator):IService
 {
-    private List<Heroe> _heroes = Factory.Factory.SeedHeroes();
-    private List<Mission> _missions = Factory.Factory.SeedMission();
+    private List<Heroe> _heroes = heroeRepository.GetAllHeroes();
+    private List<Mission> _missions = heroeRepository.GetAllMissions();
     
     public void ListAll()
     {
-        heroeRepository.GetAllHeroes();
+        var currentheroes= heroeRepository.GetAllHeroes();
+        if (currentheroes.Any())
+        {
+            _heroes!.ForEach(WriteLine);
+        }
+        else WriteLine("Apologies, no heroes are currently available.");
     }
 
     public void ShowRanking()
     {
         heroeRepository.GetHeroesOrderBy(type: TypeOrder.Heroebypowerlvl);
+    }
+
+    public void SimulateMission(string missionname)
+    {
+        var mission = _missions.FirstOrDefault(m => m.Name.Equals(missionname, StringComparison.OrdinalIgnoreCase));
+        if (mission==null)
+        {
+            WriteLine($"Mission with name: {missionname} doesnt exist ");
+        }
+        else
+        {
+            mission.SumulateMission();
+        }
     }
 
     public void GetHeroeByOrder(TypeOrder type)
@@ -35,10 +53,10 @@ public class Service(IHeroeRepository heroeRepository, IValidator validator):ISe
 
     public void GetMissionByOrder(TypeOrder type)
     {
-        var missionlist = heroeRepository.GetHeroesOrderBy(type);
-        if (missionlist == null)
+        var missionlist = heroeRepository.GetMissionsOrderBy(type);
+        if (missionlist == null || !missionlist.Any())
         {
-            Console.WriteLine("Apologies, no mission are currently available.");
+            WriteLine("Apologies, no mission are currently available.");
         }
         else
         {
@@ -46,9 +64,25 @@ public class Service(IHeroeRepository heroeRepository, IValidator validator):ISe
         }
     }
 
-    public void AssingHeroe(Heroe heroe, string namemission)
+    public void AssingHeroe(string heroename, string missionname)
     { 
-        
+        var mission = _missions.FirstOrDefault(m => m.Name.Equals(missionname, StringComparison.OrdinalIgnoreCase));
+        var heroe = _heroes.FirstOrDefault(m => m.Name.Equals(heroename, StringComparison.OrdinalIgnoreCase));
+        if (mission==null)
+        {
+            WriteLine($"Mission with name: {missionname} doesnt exist ");
+        }
+        else
+        {
+            if (heroe == null)
+            {
+                WriteLine($"Heroe with name: {heroename} doesnt exist ");
+            }
+            else
+            {
+                heroeRepository.AddHeroeToMission(heroe, mission);
+            }
+        }
     }
     
     public void  CreateHeroe(Heroe heroe)
@@ -56,12 +90,7 @@ public class Service(IHeroeRepository heroeRepository, IValidator validator):ISe
         validator.ValidateHeroe(heroe); 
         heroeRepository.AddHeroe(heroe);
     }
-
-    public void CreateMission()
-    {
-        throw new NotImplementedException();
-    }
-
+    
     public void CreateMission(Mission mission)
     {
         validator.ValidateMission(mission); 

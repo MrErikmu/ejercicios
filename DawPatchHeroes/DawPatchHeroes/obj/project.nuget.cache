@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Yg49XSwWQh4=",
+  "dgSpecHash": "pnBhXZMF5LY=",
   "success": true,
   "projectFilePath": "C:\\Users\\Neolix\\programacion\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Neolix\\.nuget\\packages\\serilog\\4.3.2-dev-02418\\serilog.4.3.2-dev-02418.nupkg.sha512"
+  ],
   "logs": []
 }

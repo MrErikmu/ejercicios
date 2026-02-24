@@ -62,7 +62,7 @@ public class Validator: IValidator
             throw new ArgumentException("Error ⚠️: All missions need atleast 1 heroe in the team ");
         }
 
-        if (mission.CollabRequited && mission.Team.Count <= 1)
+        if (mission.CollabRequired && mission.Team.Count <= 1)
         {
             throw new ArgumentException("Error ⚠️: This is a special mission who needs more than 1 heroe to start");
         }

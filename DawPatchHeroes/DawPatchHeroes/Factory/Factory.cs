@@ -30,7 +30,7 @@ public static class Factory
                 Name = "Boar Hunting",
                 Difficulty = 1,
                 Status = MisionStatus.Complete,
-                CollabRequited = false,
+                CollabRequired = false,
                 Team = new List<Heroe> 
                 {
                     new Rogue { Name = "Kaelen Voidwalker", Hp = 60, Exp = 0, Lvl = 2, PowerLvl = 2 },
@@ -42,7 +42,7 @@ public static class Factory
                 Name = "The Siege of Ironroot Grove",
                 Difficulty = 6,
                 Status = MisionStatus.Ongoing,
-                CollabRequited = true,
+                CollabRequired = true,
                 Team = new List<Heroe>
                 {
                     new MasterMind { Name = "Aeliana Frost", Hp = 10, Exp = 0, Lvl = 1, PowerLvl = 1 },
