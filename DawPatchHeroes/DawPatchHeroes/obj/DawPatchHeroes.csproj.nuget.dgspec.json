@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Neolix\\programacion\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj": {}
+    "C:\\Users\\Erik\\Programacion\\ejercicios\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Neolix\\programacion\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj": {
+    "C:\\Users\\Erik\\Programacion\\ejercicios\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Neolix\\programacion\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
+        "projectUniqueName": "C:\\Users\\Erik\\Programacion\\ejercicios\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
         "projectName": "DawPatchHeroes",
-        "projectPath": "C:\\Users\\Neolix\\programacion\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
-        "packagesPath": "C:\\Users\\Neolix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Neolix\\programacion\\DawPatchHeroes\\DawPatchHeroes\\obj\\",
+        "projectPath": "C:\\Users\\Erik\\Programacion\\ejercicios\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
+        "packagesPath": "C:\\Users\\Erik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Erik\\Programacion\\ejercicios\\DawPatchHeroes\\DawPatchHeroes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Neolix\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Erik\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -47,6 +47,10 @@
             "Serilog": {
               "target": "Package",
               "version": "[4.3.2-dev-02418, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.1.1, )"
             }
           },
           "imports": [

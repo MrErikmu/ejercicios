@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pnBhXZMF5LY=",
+  "dgSpecHash": "L8JpZVMm/MY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Neolix\\programacion\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
+  "projectFilePath": "C:\\Users\\Erik\\Programacion\\ejercicios\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Neolix\\.nuget\\packages\\serilog\\4.3.2-dev-02418\\serilog.4.3.2-dev-02418.nupkg.sha512"
+    "C:\\Users\\Erik\\.nuget\\packages\\serilog\\4.3.2-dev-02418\\serilog.4.3.2-dev-02418.nupkg.sha512",
+    "C:\\Users\\Erik\\.nuget\\packages\\serilog.sinks.console\\6.1.1\\serilog.sinks.console.6.1.1.nupkg.sha512"
   ],
   "logs": []
 }

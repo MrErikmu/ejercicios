@@ -18,11 +18,11 @@ return;
 
 void Main()
 {
-    /*Log.Logger = new LoggerConfiguration()
+    Log.Logger = new LoggerConfiguration()
         .MinimumLevel.Debug()
         .WriteTo.Console(
             outputTemplate: "{Timestamp:HH:mm:ss.fff} [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}")
-        .CreateLogger();*/
+        .CreateLogger();
     IService service = new Service(HeroeRepository.GetInstance(), new Validator());
     OptionMenu opcion;
     const string regexOpcionMenu = @"^([1-8])$";

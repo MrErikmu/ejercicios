@@ -17,6 +17,22 @@
         "build": {
           "buildTransitive/Serilog.targets": {}
         }
+      },
+      "Serilog.Sinks.Console/6.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Serilog.Sinks.Console.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Sinks.Console.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
@@ -49,27 +65,51 @@
         "serilog.4.3.2-dev-02418.nupkg.sha512",
         "serilog.nuspec"
       ]
+    },
+    "Serilog.Sinks.Console/6.1.1": {
+      "sha512": "8jbqgjUyZlfCuSTaJk6lOca465OndqOz3KZP6Cryt/IqZYybyBu7GP0fE/AXBzrrQB3EBmQntBFAvMVz1COvAA==",
+      "type": "package",
+      "path": "serilog.sinks.console/6.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net462/Serilog.Sinks.Console.dll",
+        "lib/net462/Serilog.Sinks.Console.xml",
+        "lib/net471/Serilog.Sinks.Console.dll",
+        "lib/net471/Serilog.Sinks.Console.xml",
+        "lib/net6.0/Serilog.Sinks.Console.dll",
+        "lib/net6.0/Serilog.Sinks.Console.xml",
+        "lib/net8.0/Serilog.Sinks.Console.dll",
+        "lib/net8.0/Serilog.Sinks.Console.xml",
+        "lib/netstandard2.0/Serilog.Sinks.Console.dll",
+        "lib/netstandard2.0/Serilog.Sinks.Console.xml",
+        "serilog.sinks.console.6.1.1.nupkg.sha512",
+        "serilog.sinks.console.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Serilog >= 4.3.2-dev-02418"
+      "Serilog >= 4.3.2-dev-02418",
+      "Serilog.Sinks.Console >= 6.1.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Neolix\\.nuget\\packages\\": {}
+    "C:\\Users\\Erik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neolix\\programacion\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
+      "projectUniqueName": "C:\\Users\\Erik\\Programacion\\ejercicios\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
       "projectName": "DawPatchHeroes",
-      "projectPath": "C:\\Users\\Neolix\\programacion\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
-      "packagesPath": "C:\\Users\\Neolix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Neolix\\programacion\\DawPatchHeroes\\DawPatchHeroes\\obj\\",
+      "projectPath": "C:\\Users\\Erik\\Programacion\\ejercicios\\DawPatchHeroes\\DawPatchHeroes\\DawPatchHeroes.csproj",
+      "packagesPath": "C:\\Users\\Erik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Erik\\Programacion\\ejercicios\\DawPatchHeroes\\DawPatchHeroes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Neolix\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Erik\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -102,6 +142,10 @@
           "Serilog": {
             "target": "Package",
             "version": "[4.3.2-dev-02418, )"
+          },
+          "Serilog.Sinks.Console": {
+            "target": "Package",
+            "version": "[6.1.1, )"
           }
         },
         "imports": [
