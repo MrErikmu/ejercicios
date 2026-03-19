@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <RootNamespace>ITV_Gestion</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Cache\" />
+      <Folder Include="Dto\" />
+      <Folder Include="Exceptions\Backup\" />
+      <Folder Include="Exceptions\Common\" />
+      <Folder Include="Exceptions\Vehiculo\" />
+      <Folder Include="Mappers\" />
+      <Folder Include="Storage\" />
+      <Folder Include="Validator\" />
+    </ItemGroup>
+
+</Project>
